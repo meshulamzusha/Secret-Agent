@@ -26,3 +26,9 @@ class Agent:
     @staticmethod
     def get_total_agent():
         print(f'total agent: {Agent.total_agents}')
+
+
+    @staticmethod
+    def print_agents_report(agents: list[Agent]) -> None:
+        for agent in agents:
+            agent.report()
